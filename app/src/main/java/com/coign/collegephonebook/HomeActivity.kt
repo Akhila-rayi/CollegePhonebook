@@ -21,13 +21,13 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this,RegisterActivity::class.java))
             finish()
         }
-        btn_view.setOnClickListener {
+        /*btn_view.setOnClickListener {
 
             var  it=Intent(this,ViewlistActivity::class.java)
             it.putExtra("navgtn","fromview")
             startActivity(it)
             finish()
-        }
+        }*/
         btn_search.setOnClickListener {
 
             var searchstr=et_searchby.text.toString()
