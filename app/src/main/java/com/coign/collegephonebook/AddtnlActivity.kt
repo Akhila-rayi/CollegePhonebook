@@ -9,6 +9,6 @@ class AddtnlActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_addtnl)
-        // addded to test git repository
+
     }
 }
