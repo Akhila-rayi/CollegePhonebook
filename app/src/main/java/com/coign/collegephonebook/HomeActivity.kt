@@ -29,7 +29,7 @@ class HomeActivity : AppCompatActivity() {
             finish()
         }
 
-        // changed for testing with second branch
+
 
         btn_search.setOnClickListener {
 
