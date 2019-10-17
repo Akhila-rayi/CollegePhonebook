@@ -6,6 +6,7 @@ import android.os.Bundle
 class AddtnlActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_addtnl)
         // addded to test git repository
