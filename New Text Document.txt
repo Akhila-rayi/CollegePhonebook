@@ -1,0 +1,41 @@
+
+  -----------------------asking for permissions ....  include in oncreate()-----------------------
+
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+
+              if ((ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED)) {
+
+                    requestPermissions(new String[]{Manifest.permission.CALL_PHONE}, PERMISSIONS_REQUEST_CALL_PHONE);
+
+                } else {
+
+                    // already provided permission
+                    // write your task here
+                }
+
+    } 
+   else {
+
+           //write your task here
+    }
+
+--------------------------------------------------------on requesting permissions...include after oncreate()-----------------------------------------------------------
+
+@Override
+public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        if (requestCode==PERMISSIONS_REQUEST_CALL_PHONE) {
+
+           
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // write your task here
+
+                } else {
+
+                    Toast.makeText(getApplicationContext(), "Permission denied. You cannot make a call", Toast.LENGTH_SHORT).show();
+                }
+               
+        }
+
+    }
+____________________________________________________________________________________________________________
